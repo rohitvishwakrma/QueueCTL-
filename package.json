@@ -1,0 +1,28 @@
+{
+  "name": "queuectl-node",
+  "version": "0.1.0",
+  "description": "Simple SQLite-backed queue with worker runner and CLI",
+  "bin": {
+    "queuectl": "bin/queuectl.js"
+  },
+  "main": "src/queue.js",
+  "scripts": {
+    "start": "node bin/queuectl.js",
+    "queue": "node bin/queuectl.js",
+    "demo": "node scripts/demo.js"
+  },
+  "keywords": [
+    "queue",
+    "sqlite",
+    "worker",
+    "cli"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "better-sqlite3": "^12.4.1",
+    "commander": "^11.0.0",
+    "sqlite3": "^5.1.6",
+    "uuid": "^9.0.0"
+  }
+}
